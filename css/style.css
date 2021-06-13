@@ -19,6 +19,10 @@ body {
   color: #2196f3;
 }
 
+/* Делает слово Studio в логотипе footer белым */
+.logo-span-footer {
+  color: #ffffff;
+}
 /* Делает подсветку при наведении курсора или перехода цветом для nav и footer */
 .footer-list .footer-item:hover,
 .footer-list .footer-item:focus,
@@ -42,7 +46,7 @@ body {
 }
 /* Делает цвет текста ссылки на карту */
 .footer-map {
-  color: white;
+  color: #ffffff;
   font-style: normal;
   font-weight: normal;
   font-size: 14px;
