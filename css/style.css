@@ -4,6 +4,14 @@ body {
   color: #212121;
 }
 
+:root {
+  --primary-text-color: rgba(0, 0, 0, 0.8);
+  --title-text-color: #000000;
+  --accent-color: #2196f3;
+  --primary-white-color: #ffffff;
+  --text-footer: #ffffff99;
+}
+
 /*Делает стиль логотипа logotip */
 .logo {
   font-family: 'Raleway', sans-serif;
@@ -12,27 +20,30 @@ body {
   font-weight: bold;
   font-size: 26px;
   line-height: 31px;
-  color: #000000;
+  color: var(--title-text-color);
 }
 /* Делает слово Studio в логотипе синим */
 .logo-span {
-  color: #2196f3;
+  color: var(--accent-color);
 }
 
 /* Делает слово Studio в логотипе footer белым */
 .logo-span-footer {
-  color: #ffffff;
+  color: var(--primary-white-color);
 }
 /* Делает подсветку при наведении курсора или перехода цветом для nav и footer */
 .footer-list .footer-item:hover,
 .footer-list .footer-item:focus,
 .footer-list .footer-map:hover,
 .footer-list .footer-map:focus,
+.header-list .link:active,
 .header-list .link:hover,
 .header-list .link:focus,
 .header-list-contact .link-contact:hover,
-.header-list-contact .link-contact:focus {
-  color: #2196f3;
+.header-list-contact .link-contact:focus,
+.header-list .link.current,
+.header-list-contact .link-contact.current {
+  color: var(--accent-color);
 }
 
 /* Делает футер в стиле */
@@ -89,6 +100,7 @@ body {
 }
 /* Изменяет курсор на кнопке заказать услугу в секции3 */
 .section-3-button-h1 {
+  font-family: 'Roboto', sans-serif;
   cursor: pointer;
   font-style: normal;
   font-weight: bold;
